@@ -26,8 +26,8 @@ function getLatLong() {
 
 getLatLong()
   .then((coords) => {
-    const latitude = coords?.latitude ?? parseFloat(19.076);
-    const longitude = coords?.longitude ?? parseFloat(72.8777);
+    const latitude = coords?.latitude ?? Number(19.076);
+    const longitude = coords?.longitude ?? Number(72.8777);
 
     const map = L.map("map").setView([latitude, longitude], 20);
 
