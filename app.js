@@ -29,7 +29,7 @@ getLatLong()
     const latitude = coords?.latitude ?? Number(19.076);
     const longitude = coords?.longitude ?? Number(72.8777);
 
-    const map = L.map("map").setView([latitude, longitude], 20);
+    const map = L.map("map").setView([latitude, longitude], 13);
 
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution:
